@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order — Arik Fry Media</title>
+<meta name="description" content="Place an order for social media design, sports graphics, or branding work.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">ARIKFRY<span>.MEDIA</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="active">Order</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section container" style="max-width:640px;">
+    <h1 class="center" style="font-size:2.2rem;">Place Your Order</h1>
+    <form action="mailto:arikfry.media@gmail.com" method="POST" enctype="text/plain">
+      <div class="field">
+        <label for="oname">Your Name</label>
+        <input type="text" id="oname" name="Name" required>
+      </div>
+      <div class="field">
+        <label for="oemail">Your Email</label>
+        <input type="email" id="oemail" name="Email" required>
+      </div>
+      <div class="field">
+        <label for="oservice">Select a Service</label>
+        <select id="oservice" name="Service" required>
+          <option value="" disabled selected>Select a Service</option>
+          <option>Social Media Design</option>
+          <option>Sports Graphics</option>
+          <option>Branding</option>
+          <option>Promotional Content</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="odesc">Describe Your Project</label>
+        <textarea id="odesc" name="Project Details" placeholder="Describe your project..." required></textarea>
+      </div>
+      <div class="field">
+        <label for="otimeline">Timeline</label>
+        <select id="otimeline" name="Timeline">
+          <option>Standard (3–5 days)</option>
+          <option>Rush (1–2 days)</option>
+          <option>Flexible</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Submit Order</button>
+      <p class="note center">Opens your email app to send this order. Want it to submit in-page instead? See the setup guide for adding Formspree.</p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>&copy; <span id="year"></span> Arik Fry Media. All rights reserved.</span>
+    <span><a href="mailto:arikfry.media@gmail.com">arikfry.media@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
