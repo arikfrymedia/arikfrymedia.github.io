@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Arik Fry Media</title>
+<meta name="description" content="Portfolio of social media designs, sports graphics, and branding work by Arik Fry Media.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">ARIKFRY<span>.MEDIA</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="work.html" class="active">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero center">
+    <div class="container">
+      <span class="eyebrow">My Work</span>
+      <h1>Portfolio</h1>
+      <p class="lede">A collection of high-quality designs, branding, sports graphics, and digital content created to elevate visuals and build strong identity.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="grid grid-3" id="portfolio-grid">
+      <div class="portfolio-tile"><img src="assets/portfolio/01.jpg" alt="Sheridan College — signed graphic" onerror="this.style.display='none'"><div class="cap"><strong>Sheridan College</strong><span>Signing graphic</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/02.jpg" alt="Callie Olson — Kansas State signing graphic" onerror="this.style.display='none'"><div class="cap"><strong>Signed — Callie Olson</strong><span>Kansas State</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/03.jpg" alt="Wrestling senior night graphic" onerror="this.style.display='none'"><div class="cap"><strong>Senior Night</strong><span>Wrestling</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/04.jpg" alt="All-Conference graphic for Trevor Allen" onerror="this.style.display='none'"><div class="cap"><strong>All-Conference</strong><span>Trevor Allen, Junior</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/05.jpg" alt="180 days until kickoff — Crofton vs Pender" onerror="this.style.display='none'"><div class="cap"><strong>180 Days Until Kickoff</strong><span>Crofton vs. Pender</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/06.jpg" alt="Committed graphic — Black Hills" onerror="this.style.display='none'"><div class="cap"><strong>Committed</strong><span>Black Hills</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/07.jpg" alt="Signed graphic — Briar Cliff University" onerror="this.style.display='none'"><div class="cap"><strong>Signed</strong><span>Briar Cliff University</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/08.jpg" alt="Track and field graphic" onerror="this.style.display='none'"><div class="cap"><strong>State Track &amp; Field</strong><span>2026 Championships</span></div></div>
+      <div class="portfolio-tile"><img src="assets/portfolio/09.jpg" alt="Arik Fry Media promotional graphic" onerror="this.style.display='none'"><div class="cap"><strong>Bring Your Vision to Life</strong><span>Arik Fry Media</span></div></div>
+    </div>
+    <p class="note center" style="margin-top:26px;">These tiles are placeholders — drop your real image files into <code>assets/portfolio/</code> (named 01.jpg – 09.jpg) and they'll appear automatically. See the setup guide for exactly how.</p>
+  </section>
+
+  <section class="section container">
+    <div class="cta-band">
+      <div>
+        <span class="eyebrow">Ready to level up?</span>
+        <h2>Let's create something big.</h2>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Let's Work Together &rarr;</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>&copy; <span id="year"></span> Arik Fry Media. All rights reserved.</span>
+    <span><a href="mailto:arikfry.media@gmail.com">arikfry.media@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
