@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prices — Arik Fry Media</title>
+<meta name="description" content="Pricing for social media design, sports graphics, and branding services.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">ARIKFRY<span>.MEDIA</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="prices.html" class="active">Prices</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero center">
+    <div class="container">
+      <span class="eyebrow">Info</span>
+      <h1>Prices</h1>
+      <p class="lede">High-quality designs and content made to elevate your brand and grow your presence on social media.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="grid grid-3">
+      <div class="card price-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        </div>
+        <h3>Social Media</h3>
+        <ul>
+          <li>Single Post <span class="amt">$15</span></li>
+          <li>Carousel <span class="amt">$35</span></li>
+          <li>Story Graphic <span class="amt">$10</span></li>
+          <li>Reel Cover <span class="amt">$12</span></li>
+        </ul>
+      </div>
+      <div class="card price-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+        </div>
+        <h3>Sports Graphics</h3>
+        <ul>
+          <li>Game Day Graphic <span class="amt">$25</span></li>
+          <li>Player Edit <span class="amt">$30</span></li>
+          <li>Commitment/Edit Graphic <span class="amt">$40</span></li>
+          <li>Recruiting Graphic <span class="amt">$35</span></li>
+          <li>Hype Poster <span class="amt">$45</span></li>
+        </ul>
+      </div>
+      <div class="card price-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3>Branding</h3>
+        <ul>
+          <li>Logo Design <span class="amt">$60+</span></li>
+          <li>Brand Kit <span class="amt">$100+</span></li>
+          <li>Flyers <span class="amt">$25</span></li>
+          <li>Event Graphic <span class="amt">$30</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note center" style="margin-top:30px;">Prices are a starting guide — final quotes depend on scope and turnaround. <a href="contact.html" style="color:var(--blue-bright);">Reach out</a> for a custom quote.</p>
+  </section>
+
+  <section class="section container">
+    <div class="cta-band">
+      <div>
+        <span class="eyebrow">Ready to level up?</span>
+        <h2>Let's create something big.</h2>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Let's Work Together &rarr;</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>&copy; <span id="year"></span> Arik Fry Media. All rights reserved.</span>
+    <span><a href="mailto:arikfry.media@gmail.com">arikfry.media@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
